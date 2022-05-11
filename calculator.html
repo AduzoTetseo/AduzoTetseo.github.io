@@ -110,7 +110,7 @@ display:inline-block;
 <button onclick="AT_add('')"></button>
 
 <button onclick="exe()">=</button>
-<button onclick="cancel()"></button>
+<button onclick="cancel()">CE</button>
 <button onclick="cls()">c</button>
 
 </div>
@@ -118,11 +118,13 @@ display:inline-block;
 <script>
 var val=document.getElementById("inp");
 function AT_add(v){
-	val.value +=v;
+	val.value+=v;
 }
 function cls()
 {
-	val.value="";}
+	val.value="";
+	
+}
 	function exe()
 	{
 		val.value=eval(val.value);
